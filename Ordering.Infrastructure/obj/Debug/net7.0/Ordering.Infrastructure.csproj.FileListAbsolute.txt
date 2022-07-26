@@ -1,0 +1,15 @@
+D:\GitHub\exercise\EventBus\X.Project.Component\Ordering.Infrastructure\bin\Debug\net7.0\Ordering.Infrastructure.deps.json
+D:\GitHub\exercise\EventBus\X.Project.Component\Ordering.Infrastructure\bin\Debug\net7.0\Ordering.Infrastructure.dll
+D:\GitHub\exercise\EventBus\X.Project.Component\Ordering.Infrastructure\bin\Debug\net7.0\Ordering.Infrastructure.pdb
+D:\GitHub\exercise\EventBus\X.Project.Component\Ordering.Infrastructure\bin\Debug\net7.0\Ordering.Domain.dll
+D:\GitHub\exercise\EventBus\X.Project.Component\Ordering.Infrastructure\bin\Debug\net7.0\Ordering.Domain.pdb
+D:\GitHub\exercise\EventBus\X.Project.Component\Ordering.Infrastructure\obj\Debug\net7.0\Ordering.Infrastructure.csproj.AssemblyReference.cache
+D:\GitHub\exercise\EventBus\X.Project.Component\Ordering.Infrastructure\obj\Debug\net7.0\Ordering.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\GitHub\exercise\EventBus\X.Project.Component\Ordering.Infrastructure\obj\Debug\net7.0\Ordering.Infrastructure.AssemblyInfoInputs.cache
+D:\GitHub\exercise\EventBus\X.Project.Component\Ordering.Infrastructure\obj\Debug\net7.0\Ordering.Infrastructure.AssemblyInfo.cs
+D:\GitHub\exercise\EventBus\X.Project.Component\Ordering.Infrastructure\obj\Debug\net7.0\Ordering.Infrastructure.csproj.CoreCompileInputs.cache
+D:\GitHub\exercise\EventBus\X.Project.Component\Ordering.Infrastructure\obj\Debug\net7.0\Ordering.Infrastructure.csproj.CopyComplete
+D:\GitHub\exercise\EventBus\X.Project.Component\Ordering.Infrastructure\obj\Debug\net7.0\Ordering.Infrastructure.dll
+D:\GitHub\exercise\EventBus\X.Project.Component\Ordering.Infrastructure\obj\Debug\net7.0\refint\Ordering.Infrastructure.dll
+D:\GitHub\exercise\EventBus\X.Project.Component\Ordering.Infrastructure\obj\Debug\net7.0\Ordering.Infrastructure.pdb
+D:\GitHub\exercise\EventBus\X.Project.Component\Ordering.Infrastructure\obj\Debug\net7.0\ref\Ordering.Infrastructure.dll

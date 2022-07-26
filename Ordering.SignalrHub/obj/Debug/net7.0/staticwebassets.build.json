@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "cOOFWRjNnbRpJ2tzEWXwg4Bfoen7TXqtsK8wGJkozg8=",
+  "Source": "Ordering.SignalrHub",
+  "BasePath": "_content/Ordering.SignalrHub",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

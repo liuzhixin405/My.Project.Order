@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "uVabpnzfpgS4D8QP7CiU3tigqYJ2e2KWta596cRhnklcLmtrY5HungudA/50SQRxT1YYa14Ecwsl5OEV1eofLA==",
+  "dgSpecHash": "xD+hATtreVDGKkU45E8hvz759Abyogv7aG5dHo+qF00gYIAQFkWpe/QDZlYrqjVrF0TQmy8z9e5ii+c50FufMw==",
   "success": true,
-  "projectFilePath": "D:\\GitHub\\exercise\\EventBus\\X.Project.Component\\Ordering.Infrastructure\\Ordering.Infrastructure.csproj",
+  "projectFilePath": "D:\\GitHub\\X.Project.Component\\Ordering.Infrastructure\\Ordering.Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Administrator\\.nuget\\packages\\azure.core\\1.20.0\\azure.core.1.20.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\azure.identity\\1.5.0\\azure.identity.1.5.0.nupkg.sha512",

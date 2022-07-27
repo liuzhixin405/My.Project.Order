@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\GitHub\\exercise\\EventBus\\X.Project.Component\\Ordering.Domain\\Ordering.Domain.csproj": {}
+    "D:\\GitHub\\X.Project.Component\\Ordering.Domain\\Ordering.Domain.csproj": {}
   },
   "projects": {
-    "D:\\GitHub\\exercise\\EventBus\\X.Project.Component\\Ordering.Domain\\Ordering.Domain.csproj": {
+    "D:\\GitHub\\X.Project.Component\\Ordering.Domain\\Ordering.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GitHub\\exercise\\EventBus\\X.Project.Component\\Ordering.Domain\\Ordering.Domain.csproj",
+        "projectUniqueName": "D:\\GitHub\\X.Project.Component\\Ordering.Domain\\Ordering.Domain.csproj",
         "projectName": "Ordering.Domain",
-        "projectPath": "D:\\GitHub\\exercise\\EventBus\\X.Project.Component\\Ordering.Domain\\Ordering.Domain.csproj",
+        "projectPath": "D:\\GitHub\\X.Project.Component\\Ordering.Domain\\Ordering.Domain.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "D:\\GitHub\\exercise\\EventBus\\X.Project.Component\\Ordering.Domain\\obj\\",
+        "outputPath": "D:\\GitHub\\X.Project.Component\\Ordering.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",

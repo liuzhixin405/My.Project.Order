@@ -22,3 +22,15 @@ D:\GitHub\exercise\EventBus\X.Project.Component\EventBus\obj\Debug\net7.0\EventB
 D:\GitHub\exercise\EventBus\X.Project.Component\EventBus\obj\Debug\net7.0\refint\EventBus.dll
 D:\GitHub\exercise\EventBus\X.Project.Component\EventBus\obj\Debug\net7.0\EventBus.pdb
 D:\GitHub\exercise\EventBus\X.Project.Component\EventBus\obj\Debug\net7.0\ref\EventBus.dll
+D:\GitHub\X.Project.Component\EventBus\bin\Debug\net7.0\EventBus.deps.json
+D:\GitHub\X.Project.Component\EventBus\bin\Debug\net7.0\EventBus.dll
+D:\GitHub\X.Project.Component\EventBus\bin\Debug\net7.0\EventBus.pdb
+D:\GitHub\X.Project.Component\EventBus\obj\Debug\net7.0\EventBus.csproj.AssemblyReference.cache
+D:\GitHub\X.Project.Component\EventBus\obj\Debug\net7.0\EventBus.GeneratedMSBuildEditorConfig.editorconfig
+D:\GitHub\X.Project.Component\EventBus\obj\Debug\net7.0\EventBus.AssemblyInfoInputs.cache
+D:\GitHub\X.Project.Component\EventBus\obj\Debug\net7.0\EventBus.AssemblyInfo.cs
+D:\GitHub\X.Project.Component\EventBus\obj\Debug\net7.0\EventBus.csproj.CoreCompileInputs.cache
+D:\GitHub\X.Project.Component\EventBus\obj\Debug\net7.0\EventBus.dll
+D:\GitHub\X.Project.Component\EventBus\obj\Debug\net7.0\refint\EventBus.dll
+D:\GitHub\X.Project.Component\EventBus\obj\Debug\net7.0\EventBus.pdb
+D:\GitHub\X.Project.Component\EventBus\obj\Debug\net7.0\ref\EventBus.dll

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "V3ldVFclx1yNqa06TJy9BkVCbSHqcg66U/CCr58mfRYBA3tp+ZRy27Gd1aOpJZa6gYgNXw3kg/lPWd3aTnpASA==",
+  "dgSpecHash": "SUbEO3ffUF+SUqRWYiSMMZWSHizfEB3oD6eNDT+Ve9d1cwGeAcfr+AmGlYHpMFgtkTXHPC3WRLGfbli75LgQvw==",
   "success": true,
-  "projectFilePath": "D:\\GitHub\\exercise\\EventBus\\X.Project.Component\\EventBus\\EventBus.csproj",
+  "projectFilePath": "D:\\GitHub\\X.Project.Component\\EventBus\\EventBus.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

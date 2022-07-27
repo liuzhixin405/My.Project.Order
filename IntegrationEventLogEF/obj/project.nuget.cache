@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "shrve21LVV0UrGoXAidC5P2qxXF/UBx6dIcGxQ+hdWacKiSuXStEJPo649x/OekU0p6GV8g8TEWsbKZzb5kQZA==",
+  "dgSpecHash": "bjRShjKquBkfNrxy+uWl2VbRDAf0KXzk9WqrDBReoxfXdxfxFRqkZWzgi/mQtvb8a1P9EGD0JHjHRLGOI4yRLA==",
   "success": true,
-  "projectFilePath": "D:\\GitHub\\exercise\\EventBus\\X.Project.Component\\IntegrationEventLogEF\\IntegrationEventLogEF.csproj",
+  "projectFilePath": "D:\\GitHub\\X.Project.Component\\IntegrationEventLogEF\\IntegrationEventLogEF.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Administrator\\.nuget\\packages\\azure.core\\1.20.0\\azure.core.1.20.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\azure.identity\\1.5.0\\azure.identity.1.5.0.nupkg.sha512",

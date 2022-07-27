@@ -7,4 +7,4 @@ build_property.InvariantGlobalization =
 build_property.PlatformNeutralAssembly = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = EventBusRabbitMQ
-build_property.ProjectDir = D:\GitHub\exercise\EventBus\X.Project.Component\EventBusRabbitMQ\
+build_property.ProjectDir = D:\GitHub\X.Project.Component\EventBusRabbitMQ\

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\GitHub\\exercise\\EventBus\\X.Project.Component\\IntegrationEventLogEF\\IntegrationEventLogEF.csproj": {}
+    "D:\\GitHub\\X.Project.Component\\IntegrationEventLogEF\\IntegrationEventLogEF.csproj": {}
   },
   "projects": {
-    "D:\\GitHub\\exercise\\EventBus\\X.Project.Component\\EventBus\\EventBus.csproj": {
+    "D:\\GitHub\\X.Project.Component\\EventBus\\EventBus.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GitHub\\exercise\\EventBus\\X.Project.Component\\EventBus\\EventBus.csproj",
+        "projectUniqueName": "D:\\GitHub\\X.Project.Component\\EventBus\\EventBus.csproj",
         "projectName": "EventBus",
-        "projectPath": "D:\\GitHub\\exercise\\EventBus\\X.Project.Component\\EventBus\\EventBus.csproj",
+        "projectPath": "D:\\GitHub\\X.Project.Component\\EventBus\\EventBus.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "D:\\GitHub\\exercise\\EventBus\\X.Project.Component\\EventBus\\obj\\",
+        "outputPath": "D:\\GitHub\\X.Project.Component\\EventBus\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -59,14 +59,14 @@
         }
       }
     },
-    "D:\\GitHub\\exercise\\EventBus\\X.Project.Component\\IntegrationEventLogEF\\IntegrationEventLogEF.csproj": {
+    "D:\\GitHub\\X.Project.Component\\IntegrationEventLogEF\\IntegrationEventLogEF.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GitHub\\exercise\\EventBus\\X.Project.Component\\IntegrationEventLogEF\\IntegrationEventLogEF.csproj",
+        "projectUniqueName": "D:\\GitHub\\X.Project.Component\\IntegrationEventLogEF\\IntegrationEventLogEF.csproj",
         "projectName": "IntegrationEventLogEF",
-        "projectPath": "D:\\GitHub\\exercise\\EventBus\\X.Project.Component\\IntegrationEventLogEF\\IntegrationEventLogEF.csproj",
+        "projectPath": "D:\\GitHub\\X.Project.Component\\IntegrationEventLogEF\\IntegrationEventLogEF.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "D:\\GitHub\\exercise\\EventBus\\X.Project.Component\\IntegrationEventLogEF\\obj\\",
+        "outputPath": "D:\\GitHub\\X.Project.Component\\IntegrationEventLogEF\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -83,8 +83,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "D:\\GitHub\\exercise\\EventBus\\X.Project.Component\\EventBus\\EventBus.csproj": {
-                "projectPath": "D:\\GitHub\\exercise\\EventBus\\X.Project.Component\\EventBus\\EventBus.csproj"
+              "D:\\GitHub\\X.Project.Component\\EventBus\\EventBus.csproj": {
+                "projectPath": "D:\\GitHub\\X.Project.Component\\EventBus\\EventBus.csproj"
               }
             }
           }

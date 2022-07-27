@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "WKpCRohxmouv5ol1HdXQenGjGRO085sxCxXDVnD9O/0I7Jnom3VoZOpHfRvx5kmVG6H6xNKY8XY8dMBPigGi/A==",
+  "dgSpecHash": "KmPBWaqb/QD7BW8H43WG/wn9FRzhnyu4ohcqnX4N4sIfwnvYeZV+fmzs+4g3oJImUljaLKZ4tuCoGCj3vKappw==",
   "success": true,
-  "projectFilePath": "D:\\GitHub\\exercise\\EventBus\\X.Project.Component\\Ordering.Domain\\Ordering.Domain.csproj",
+  "projectFilePath": "D:\\GitHub\\X.Project.Component\\Ordering.Domain\\Ordering.Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Administrator\\.nuget\\packages\\mediatr\\10.0.1\\mediatr.10.0.1.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",

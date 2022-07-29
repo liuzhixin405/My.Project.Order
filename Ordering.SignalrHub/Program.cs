@@ -28,6 +28,7 @@ try
     builder.Host.UseSerilog();
     builder.Host.UseServiceProviderFactory(new AutofacServiceProviderFactory());
     ConfigureServices(builder.Services);
+    
 
     Log.Information("Starting web host ({ApplicationContext})...", Program.AppName);
     var app = builder.Build();

@@ -78,7 +78,7 @@ namespace Ordering.Domain.AggregatesModel.OrderAggregate
         {
             if(_orderStatusId == OrderStatus.Submitted.Id)
             {
-                AddDomainEvent(new OrderStatusChangedToWaitingValidationDoomainEvent(Id, _orderItems));
+                AddDomainEvent(new OrderStatusChangedToWaitingValidationDomainEvent(Id, _orderItems));
                 _orderStatusId = OrderStatus.AwaitingValidation.Id;
             }
         }

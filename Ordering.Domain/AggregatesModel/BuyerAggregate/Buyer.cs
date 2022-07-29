@@ -19,7 +19,7 @@ namespace Ordering.Domain.AggregatesModel.BuyerAggregate
         {
             _paymentMethods = new List<PaymentMethod>();
         }
-        public Buyer(string identity, string name, List<PaymentMethod> paymentMethods):this()
+        public Buyer(string identity, string name):this()
         {
             IdentityGuid = identity??throw new ArgumentNullException(nameof(identity));
             Name = name ?? throw new ArgumentNullException(nameof(name));

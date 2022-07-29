@@ -124,3 +124,4 @@ D:\GitHub\X.Project.Component\Ordering.API\bin\Debug\net7.0\Ordering.Domain.pdb
 D:\GitHub\X.Project.Component\Ordering.API\bin\Debug\net7.0\FluentValidation.dll
 D:\GitHub\X.Project.Component\Ordering.API\bin\Debug\net7.0\IntegrationEventLogEF.dll
 D:\GitHub\X.Project.Component\Ordering.API\bin\Debug\net7.0\IntegrationEventLogEF.pdb
+D:\GitHub\X.Project.Component\Ordering.API\bin\Debug\net7.0\Dapper.dll

@@ -8,11 +8,11 @@ using System.Threading.Tasks;
 
 namespace Ordering.Domain.Events
 {
-    public class OrderStatusChangedToWaitingValidationDoomainEvent:INotification
+    public class OrderStatusChangedToWaitingValidationDomainEvent:INotification
     {
         public int OrderId { get; }
         public IEnumerable<OrderItem> OrderItems { get; }
-        public OrderStatusChangedToWaitingValidationDoomainEvent(int orderId,IEnumerable<OrderItem> orderItems)
+        public OrderStatusChangedToWaitingValidationDomainEvent(int orderId,IEnumerable<OrderItem> orderItems)
         {
             OrderId = orderId;
             OrderItems = orderItems;

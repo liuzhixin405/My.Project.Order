@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "VImTeNtcz0GxGZq+H87PUP8TKgL+XHhnzusorNHjExuAOyIxDDgfO7H2AVwwkGK0g5F9k5jlTKDkllvnNEYgqQ==",
+  "dgSpecHash": "vNuCos/t+dwMOYcIdyUrBu4HGRynG6EsdxiB+APscpHHUB+rGLSGdluPdGBwJU1+3ZiGwCiXDCJErqKlEGvOXw==",
   "success": true,
   "projectFilePath": "D:\\GitHub\\X.Project.Component\\Ordering.API\\Ordering.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Administrator\\.nuget\\packages\\autofac\\6.4.0\\autofac.6.4.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\azure.core\\1.20.0\\azure.core.1.20.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\azure.identity\\1.5.0\\azure.identity.1.5.0.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\dapper\\2.0.123\\dapper.2.0.123.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\fluentvalidation\\11.1.0\\fluentvalidation.11.1.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\mediatr\\10.0.1\\mediatr.10.0.1.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",

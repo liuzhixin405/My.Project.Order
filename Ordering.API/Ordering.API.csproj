@@ -7,6 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Dapper" Version="2.0.123" />
     <PackageReference Include="FluentValidation" Version="11.1.0" />
     <PackageReference Include="MediatR" Version="10.0.1" />
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.0-preview.6.22330.3" />
@@ -14,14 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Application\DomainEventHandlers\OrderGracePeriodConfirmed\" />
-    <Folder Include="Application\DomainEventHandlers\OrderPaid\" />
-    <Folder Include="Application\DomainEventHandlers\OrderShipped\" />
-    <Folder Include="Application\DomainEventHandlers\OrderStartedEvent\" />
-    <Folder Include="Application\DomainEventHandlers\OrderStockConfirmed\" />
     <Folder Include="Application\IntegrationEvents\EventHandling\" />
-    <Folder Include="Application\Queries\" />
-    <Folder Include="Application\Validations\" />
     <Folder Include="Controllers\" />
     <Folder Include="Grpc\" />
     <Folder Include="Proto\" />

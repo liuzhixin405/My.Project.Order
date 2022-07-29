@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v7.0": {
       "Ordering.API/1.0.0": {
         "dependencies": {
+          "Dapper": "2.0.123",
           "EventBusRabbitMQ": "1.0.0",
           "FluentValidation": "11.1.0",
           "IntegrationEventLogEF": "1.0.0",
@@ -62,6 +63,14 @@
           "lib/netstandard2.0/Azure.Identity.dll": {
             "assemblyVersion": "1.5.0.0",
             "fileVersion": "1.500.21.51401"
+          }
+        }
+      },
+      "Dapper/2.0.123": {
+        "runtime": {
+          "lib/net5.0/Dapper.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.123.33578"
           }
         }
       },
@@ -741,6 +750,13 @@
       "sha512": "sha512-VfF88dqrgKXZNOS/y4XrX/jmIfP3pkY+hBUzBNpoKml1nR+QshX6XlXWyToLtWV80TDQ1CmUVCJksktDg5+j1w==",
       "path": "azure.identity/1.5.0",
       "hashPath": "azure.identity.1.5.0.nupkg.sha512"
+    },
+    "Dapper/2.0.123": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-RDFF4rBLLmbpi6pwkY7q/M6UXHRJEOerplDGE5jwEkP/JGJnBauAClYavNKJPW1yOTWRPIyfj4is3EaJxQXILQ==",
+      "path": "dapper/2.0.123",
+      "hashPath": "dapper.2.0.123.nupkg.sha512"
     },
     "FluentValidation/11.1.0": {
       "type": "package",

@@ -19,6 +19,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ordering.SignalrHub", "Orde
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ordering.API", "Ordering.API\Ordering.API.csproj", "{E3AEA3F5-AD00-40B8-B2C0-54018886DCDD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ordering.BackgroundTasks", "Ordering.BackgroundTasks\Ordering.BackgroundTasks.csproj", "{7A710A5A-BF5F-4B89-A5D3-2FE3F14C6863}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -53,6 +55,10 @@ Global
 		{E3AEA3F5-AD00-40B8-B2C0-54018886DCDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E3AEA3F5-AD00-40B8-B2C0-54018886DCDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E3AEA3F5-AD00-40B8-B2C0-54018886DCDD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A710A5A-BF5F-4B89-A5D3-2FE3F14C6863}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A710A5A-BF5F-4B89-A5D3-2FE3F14C6863}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A710A5A-BF5F-4B89-A5D3-2FE3F14C6863}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A710A5A-BF5F-4B89-A5D3-2FE3F14C6863}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -62,6 +68,7 @@ Global
 		{C741E6BD-6FE4-46AE-B149-D7DE2E230018} = {4FA718A1-A122-4D5E-9C7E-AC0F25755CB3}
 		{E4FB79D8-C646-4CE1-ADF1-361FCEB8023B} = {4FA718A1-A122-4D5E-9C7E-AC0F25755CB3}
 		{E3AEA3F5-AD00-40B8-B2C0-54018886DCDD} = {4FA718A1-A122-4D5E-9C7E-AC0F25755CB3}
+		{7A710A5A-BF5F-4B89-A5D3-2FE3F14C6863} = {4FA718A1-A122-4D5E-9C7E-AC0F25755CB3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {AA081AA3-E5C4-46E8-B1E2-E17A038FAF6C}

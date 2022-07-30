@@ -10,6 +10,7 @@ using IntegrationEventLogEF.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Diagnostics.HealthChecks;
 using Ordering.API.Application.IntegrationEvents;
@@ -19,6 +20,7 @@ using Ordering.API.Infrastructure.AutofacModules;
 using Ordering.API.Infrastructure.Filters;
 using Ordering.API.Infrastructure.Services;
 using Ordering.Infrastructure;
+using Polly;
 using RabbitMQ.Client;
 using System.Data.Common;
 using System.IdentityModel.Tokens.Jwt;
@@ -26,115 +28,115 @@ using System.Reflection;
 
 namespace Ordering.API
 {
-    public class Startup
-    {
-        public IConfiguration Configuration { get;}
-        public Startup(IConfiguration configuration)
-        {
-            Configuration = configuration;
-        }
+    //public class Startup
+    //{
+    //    public IConfiguration Configuration { get;}
+    //    public Startup(IConfiguration configuration)
+    //    {
+    //        Configuration = configuration;
+    //    }
 
-        public virtual IServiceProvider ConfigureServices(IServiceCollection services)
-        {
-            services.AddGrpc(o =>
-            {
-                o.EnableDetailedErrors = true;
-            })
-                .Services
-                .AddApplicationInsights(Configuration)
-                .AddCustomMvc()
-                .AddHealthChecks(Configuration)
-                .AddCustomDbContext(Configuration)
-                .AddCustomSwagger(Configuration)
-                .AddCustomIntegrations(Configuration)
-                .AddCustomConfiguration(Configuration)
-                .AddEventBus(Configuration)
-                .AddCustomAuthentication(Configuration);
+    //    public virtual IServiceProvider ConfigureServices(IServiceCollection services)
+    //    {
+    //        services.AddGrpc(o =>
+    //        {
+    //            o.EnableDetailedErrors = true;
+    //        })
+    //            .Services
+    //            .AddApplicationInsights(Configuration)
+    //            .AddCustomMvc()
+    //            .AddHealthChecks(Configuration)
+    //            .AddCustomDbContext(Configuration)
+    //            .AddCustomSwagger(Configuration)
+    //            .AddCustomIntegrations(Configuration)
+    //            .AddCustomConfiguration(Configuration)
+    //            .AddEventBus(Configuration)
+    //            .AddCustomAuthentication(Configuration);
 
-            var container = new ContainerBuilder();
-            container.Populate(services);
-            container.RegisterModule(new MediatorModule());
-            container.RegisterModule(new ApplicationModule(Configuration["ConnectionString"]));
+    //        var container = new ContainerBuilder();
+    //        container.Populate(services);
+    //        container.RegisterModule(new MediatorModule());
+    //        container.RegisterModule(new ApplicationModule(Configuration["ConnectionString"]));
 
-            return new AutofacServiceProvider(container.Build());
-        }
+    //        return new AutofacServiceProvider(container.Build());
+    //    }
 
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
-        {
-            //loggerFactory.AddAzureWebAppDiagnostics();
-            //loggerFactory.AddApplicationInsights(app.ApplicationServices, LogLevel.Trace);
+    //    public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+    //    {
+    //        //loggerFactory.AddAzureWebAppDiagnostics();
+    //        //loggerFactory.AddApplicationInsights(app.ApplicationServices, LogLevel.Trace);
 
-            var pathBase = Configuration["PATH_BASE"];
-            if (!string.IsNullOrEmpty(pathBase))
-            {
-                app.UsePathBase(pathBase);
-            }
+    //        var pathBase = Configuration["PATH_BASE"];
+    //        if (!string.IsNullOrEmpty(pathBase))
+    //        {
+    //            app.UsePathBase(pathBase);
+    //        }
 
-            app.UseSwagger()
-               .UseSwaggerUI(c =>
-               {
-                   c.SwaggerEndpoint($"{(!string.IsNullOrEmpty(pathBase) ? pathBase : string.Empty)}/swagger/v1/swagger.json", "Ordering.API V1");
-                   c.OAuthClientId("orderingswaggerui");
-                   c.OAuthAppName("Ordering Swagger UI");
-               });
+    //        app.UseSwagger()
+    //           .UseSwaggerUI(c =>
+    //           {
+    //               c.SwaggerEndpoint($"{(!string.IsNullOrEmpty(pathBase) ? pathBase : string.Empty)}/swagger/v1/swagger.json", "Ordering.API V1");
+    //               c.OAuthClientId("orderingswaggerui");
+    //               c.OAuthAppName("Ordering Swagger UI");
+    //           });
 
-            app.UseRouting();
-            app.UseCors("CorsPolicy");
-            ConfigureAuth(app);
+    //        app.UseRouting();
+    //        app.UseCors("CorsPolicy");
+    //        ConfigureAuth(app);
 
-            app.UseEndpoints(endpoints =>
-            {
-                endpoints.MapGrpcService<OrderingService>();
-                endpoints.MapDefaultControllerRoute();
-                endpoints.MapControllers();
-                endpoints.MapGet("/_proto/", async ctx =>
-                {
-                    ctx.Response.ContentType = "text/plain";
-                    using var fs = new FileStream(Path.Combine(env.ContentRootPath, "Proto", "basket.proto"), FileMode.Open, FileAccess.Read);
-                    using var sr = new StreamReader(fs);
-                    while (!sr.EndOfStream)
-                    {
-                        var line = await sr.ReadLineAsync();
-                        if (line != "/* >>" || line != "<< */")
-                        {
-                            await ctx.Response.WriteAsync(line);
-                        }
-                    }
-                });
-                endpoints.MapHealthChecks("/hc", new HealthCheckOptions()
-                {
-                    Predicate = _ => true,
-                    ResponseWriter = UIResponseWriter.WriteHealthCheckUIResponse
-                });
-                endpoints.MapHealthChecks("/liveness", new HealthCheckOptions
-                {
-                    Predicate = r => r.Name.Contains("self")
-                });
-            });
+    //        app.UseEndpoints(endpoints =>
+    //        {
+    //            endpoints.MapGrpcService<OrderingService>();
+    //            endpoints.MapDefaultControllerRoute();
+    //            endpoints.MapControllers();
+    //            endpoints.MapGet("/_proto/", async ctx =>
+    //            {
+    //                ctx.Response.ContentType = "text/plain";
+    //                using var fs = new FileStream(Path.Combine(env.ContentRootPath, "Proto", "basket.proto"), FileMode.Open, FileAccess.Read);
+    //                using var sr = new StreamReader(fs);
+    //                while (!sr.EndOfStream)
+    //                {
+    //                    var line = await sr.ReadLineAsync();
+    //                    if (line != "/* >>" || line != "<< */")
+    //                    {
+    //                        await ctx.Response.WriteAsync(line);
+    //                    }
+    //                }
+    //            });
+    //            endpoints.MapHealthChecks("/hc", new HealthCheckOptions()
+    //            {
+    //                Predicate = _ => true,
+    //                ResponseWriter = UIResponseWriter.WriteHealthCheckUIResponse
+    //            });
+    //            endpoints.MapHealthChecks("/liveness", new HealthCheckOptions
+    //            {
+    //                Predicate = r => r.Name.Contains("self")
+    //            });
+    //        });
 
-            ConfigureEventBus(app);
-        }
+    //        ConfigureEventBus(app);
+    //    }
 
-        private void ConfigureEventBus(IApplicationBuilder app)
-        {
-            var eventBus = app.ApplicationServices.GetRequiredService<IEventBus>();
+    //    private void ConfigureEventBus(IApplicationBuilder app)
+    //    {
+    //        var eventBus = app.ApplicationServices.GetRequiredService<IEventBus>();
 
-            eventBus.Subscribe<UserCheckoutAcceptedIntegrationEvent, IIntegrationEventHandler<UserCheckoutAcceptedIntegrationEvent>>();
-            eventBus.Subscribe<GracePeriodConfirmedIntegrationEvent, IIntegrationEventHandler<GracePeriodConfirmedIntegrationEvent>>();
-            eventBus.Subscribe<OrderStockConfirmedIntegrationEvent, IIntegrationEventHandler<OrderStockConfirmedIntegrationEvent>>();
-            eventBus.Subscribe<OrderStockRejectedIntegrationEvent, IIntegrationEventHandler<OrderStockRejectedIntegrationEvent>>();
-            eventBus.Subscribe<OrderPaymentFailedIntegrationEvent, IIntegrationEventHandler<OrderPaymentFailedIntegrationEvent>>();
-            eventBus.Subscribe<OrderPaymentSucceededIntegrationEvent, IIntegrationEventHandler<OrderPaymentSucceededIntegrationEvent>>();
-        }
+    //        eventBus.Subscribe<UserCheckoutAcceptedIntegrationEvent, IIntegrationEventHandler<UserCheckoutAcceptedIntegrationEvent>>();
+    //        eventBus.Subscribe<GracePeriodConfirmedIntegrationEvent, IIntegrationEventHandler<GracePeriodConfirmedIntegrationEvent>>();
+    //        eventBus.Subscribe<OrderStockConfirmedIntegrationEvent, IIntegrationEventHandler<OrderStockConfirmedIntegrationEvent>>();
+    //        eventBus.Subscribe<OrderStockRejectedIntegrationEvent, IIntegrationEventHandler<OrderStockRejectedIntegrationEvent>>();
+    //        eventBus.Subscribe<OrderPaymentFailedIntegrationEvent, IIntegrationEventHandler<OrderPaymentFailedIntegrationEvent>>();
+    //        eventBus.Subscribe<OrderPaymentSucceededIntegrationEvent, IIntegrationEventHandler<OrderPaymentSucceededIntegrationEvent>>();
+    //    }
 
-        protected virtual void ConfigureAuth(IApplicationBuilder app)
-        {
-            app.UseAuthentication();
-            app.UseAuthorization();
-        }
-    }
+    //    protected virtual void ConfigureAuth(IApplicationBuilder app)
+    //    {
+    //        app.UseAuthentication();
+    //        app.UseAuthorization();
+    //    }
+    //}
 
-    static class CustomExtensionsMethods
+    static partial class CustomExtensionsMethods
     {
         public static IServiceCollection AddApplicationInsights(this IServiceCollection services,IConfiguration configuration)
         {
@@ -192,7 +194,7 @@ namespace Ordering.API
                 os.UseSqlServer(configuration["ConnectionString"],
                     sqlOptions =>
                     {
-                        sqlOptions.MigrationsAssembly(typeof(Startup).GetTypeInfo().Assembly.GetName().Name);
+                        sqlOptions.MigrationsAssembly(typeof(Program).GetTypeInfo().Assembly.GetName().Name);
                         sqlOptions.EnableRetryOnFailure(15, TimeSpan.FromSeconds(30), null);
                     });
             },
@@ -203,7 +205,7 @@ namespace Ordering.API
                 options.UseSqlServer(configuration["ConnectionString"],
                                      sqlServerOptionsAction: sqlOptions =>
                                      {
-                                         sqlOptions.MigrationsAssembly(typeof(Startup).GetTypeInfo().Assembly.GetName().Name);
+                                         sqlOptions.MigrationsAssembly(typeof(Program).GetTypeInfo().Assembly.GetName().Name);
                                          
                                          sqlOptions.EnableRetryOnFailure(maxRetryCount: 15, maxRetryDelay: TimeSpan.FromSeconds(30), errorNumbersToAdd: null);
                                      });
@@ -345,6 +347,5 @@ namespace Ordering.API
 
             return services;
         }
-
     }
 }

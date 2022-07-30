@@ -62,12 +62,10 @@ try
     #endregion
 
     app.Run();
-    return 0;
 }
 catch(Exception ex)
 {
     Log.Fatal(ex, "Program terminated unexpectedly ({ApplicationContext})!", Program.AppName);
-    return 1;
 }
 finally
 {

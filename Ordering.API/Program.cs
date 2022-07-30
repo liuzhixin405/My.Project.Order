@@ -27,19 +27,19 @@ try
     Log.Information("Configuring web host ({ApplicationContext})...", Program.AppName);
     var builder = WebApplication.CreateBuilder(args);
 
-    builder.WebHost.CaptureStartupErrors(false).ConfigureKestrel(options =>
-    {
-        var ports = GetDefinedPorts(configuration);
-        options.Listen(IPAddress.Any, ports.httpPort, listenOptions =>
-        {
-            listenOptions.Protocols = HttpProtocols.Http1AndHttp2;
-        });
+    //builder.WebHost.CaptureStartupErrors(false).ConfigureKestrel(options =>
+    //{
+    //    var ports = GetDefinedPorts(configuration);
+    //    options.Listen(IPAddress.Any, ports.httpPort, listenOptions =>
+    //    {
+    //        listenOptions.Protocols = HttpProtocols.Http1AndHttp2;
+    //    });
 
-        options.Listen(IPAddress.Any, ports.grpcPort, listenOptions =>
-        {
-            listenOptions.Protocols = HttpProtocols.Http2;
-        });
-    }).ConfigureAppConfiguration(x => x.AddConfiguration(configuration));
+    //    options.Listen(IPAddress.Any, ports.grpcPort, listenOptions =>
+    //    {
+    //        listenOptions.Protocols = HttpProtocols.Http2;
+    //    });
+    //}).ConfigureAppConfiguration(x => x.AddConfiguration(configuration));
  
     //builder.WebHost.UseContentRoot(Directory.GetCurrentDirectory()).UseStartup<Startup>();
     builder.Host.UseSerilog();

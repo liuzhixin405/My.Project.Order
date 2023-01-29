@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "S5R2Bt/p6Hn41Kt1IBOdD3xeFVvNZwoWNdrk1CZQMvhQSrrRrf8XsXgeVgvmoiQ6ilRNXpwO9SzF75R54g1Img==",
+  "dgSpecHash": "KacVRLypGfBTYNCBmx4TJq/HKgCd7UfZYeaD4RNn3a0Y8UHfrb+KEY34SXGvQGkEexE2I2nz3uqaFLop9Y3zOA==",
   "success": true,
-  "projectFilePath": "D:\\GitHub\\X.Project.Component\\Ordering.BackgroundTasks\\Ordering.BackgroundTasks.csproj",
+  "projectFilePath": "D:\\GitHub\\My.Project.Order\\Ordering.BackgroundTasks\\Ordering.BackgroundTasks.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Administrator\\.nuget\\packages\\autofac\\6.4.0\\autofac.6.4.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\dapper\\2.0.123\\dapper.2.0.123.nupkg.sha512",

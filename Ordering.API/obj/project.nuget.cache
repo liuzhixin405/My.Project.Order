@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "cogE8QRzNESiN5dw6lzXsFCB28ySVcYolGnM1xncj+iqvc/EPrH4iNd7DAYeM9/RM1HvnHiZp+n5Lp5JG1Y6oA==",
+  "dgSpecHash": "VvaSrqHq+/LoP/bFX2I4rUOG6ZNcjUVSzCz9UQEVbV5bxQapf1S6k7TOTTII0+WrZxiYe7gbYs16GxWBZwYXHw==",
   "success": true,
-  "projectFilePath": "D:\\GitHub\\X.Project.Component\\Ordering.API\\Ordering.API.csproj",
+  "projectFilePath": "D:\\GitHub\\My.Project.Order\\Ordering.API\\Ordering.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Administrator\\.nuget\\packages\\aspnetcore.healthchecks.rabbitmq\\6.0.2\\aspnetcore.healthchecks.rabbitmq.6.0.2.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\aspnetcore.healthchecks.sqlserver\\6.0.2\\aspnetcore.healthchecks.sqlserver.6.0.2.nupkg.sha512",

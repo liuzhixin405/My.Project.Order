@@ -22,3 +22,15 @@ D:\GitHub\X.Project.Component\Ordering.Domain\obj\Debug\net7.0\Ordering.Domain.d
 D:\GitHub\X.Project.Component\Ordering.Domain\obj\Debug\net7.0\refint\Ordering.Domain.dll
 D:\GitHub\X.Project.Component\Ordering.Domain\obj\Debug\net7.0\Ordering.Domain.pdb
 D:\GitHub\X.Project.Component\Ordering.Domain\obj\Debug\net7.0\ref\Ordering.Domain.dll
+D:\GitHub\My.Project.Order\Ordering.Domain\bin\Debug\net7.0\Ordering.Domain.deps.json
+D:\GitHub\My.Project.Order\Ordering.Domain\bin\Debug\net7.0\Ordering.Domain.dll
+D:\GitHub\My.Project.Order\Ordering.Domain\bin\Debug\net7.0\Ordering.Domain.pdb
+D:\GitHub\My.Project.Order\Ordering.Domain\obj\Debug\net7.0\Ordering.Domain.csproj.AssemblyReference.cache
+D:\GitHub\My.Project.Order\Ordering.Domain\obj\Debug\net7.0\Ordering.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\GitHub\My.Project.Order\Ordering.Domain\obj\Debug\net7.0\Ordering.Domain.AssemblyInfoInputs.cache
+D:\GitHub\My.Project.Order\Ordering.Domain\obj\Debug\net7.0\Ordering.Domain.AssemblyInfo.cs
+D:\GitHub\My.Project.Order\Ordering.Domain\obj\Debug\net7.0\Ordering.Domain.csproj.CoreCompileInputs.cache
+D:\GitHub\My.Project.Order\Ordering.Domain\obj\Debug\net7.0\Ordering.Domain.dll
+D:\GitHub\My.Project.Order\Ordering.Domain\obj\Debug\net7.0\refint\Ordering.Domain.dll
+D:\GitHub\My.Project.Order\Ordering.Domain\obj\Debug\net7.0\Ordering.Domain.pdb
+D:\GitHub\My.Project.Order\Ordering.Domain\obj\Debug\net7.0\ref\Ordering.Domain.dll

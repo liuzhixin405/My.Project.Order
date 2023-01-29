@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\GitHub\\X.Project.Component\\Ordering.API\\Ordering.API.csproj": {}
+    "D:\\GitHub\\My.Project.Order\\Ordering.API\\Ordering.API.csproj": {}
   },
   "projects": {
-    "D:\\GitHub\\X.Project.Component\\EventBusRabbitMQ\\EventBusRabbitMQ.csproj": {
+    "D:\\GitHub\\My.Project.Order\\EventBusRabbitMQ\\EventBusRabbitMQ.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GitHub\\X.Project.Component\\EventBusRabbitMQ\\EventBusRabbitMQ.csproj",
+        "projectUniqueName": "D:\\GitHub\\My.Project.Order\\EventBusRabbitMQ\\EventBusRabbitMQ.csproj",
         "projectName": "EventBusRabbitMQ",
-        "projectPath": "D:\\GitHub\\X.Project.Component\\EventBusRabbitMQ\\EventBusRabbitMQ.csproj",
+        "projectPath": "D:\\GitHub\\My.Project.Order\\EventBusRabbitMQ\\EventBusRabbitMQ.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "D:\\GitHub\\X.Project.Component\\EventBusRabbitMQ\\obj\\",
+        "outputPath": "D:\\GitHub\\My.Project.Order\\EventBusRabbitMQ\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "D:\\GitHub\\X.Project.Component\\EventBus\\EventBus.csproj": {
-                "projectPath": "D:\\GitHub\\X.Project.Component\\EventBus\\EventBus.csproj"
+              "D:\\GitHub\\My.Project.Order\\EventBus\\EventBus.csproj": {
+                "projectPath": "D:\\GitHub\\My.Project.Order\\EventBus\\EventBus.csproj"
               }
             }
           }
@@ -77,18 +77,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100-preview.6.22352.1\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\GitHub\\X.Project.Component\\EventBus\\EventBus.csproj": {
+    "D:\\GitHub\\My.Project.Order\\EventBus\\EventBus.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GitHub\\X.Project.Component\\EventBus\\EventBus.csproj",
+        "projectUniqueName": "D:\\GitHub\\My.Project.Order\\EventBus\\EventBus.csproj",
         "projectName": "EventBus",
-        "projectPath": "D:\\GitHub\\X.Project.Component\\EventBus\\EventBus.csproj",
+        "projectPath": "D:\\GitHub\\My.Project.Order\\EventBus\\EventBus.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "D:\\GitHub\\X.Project.Component\\EventBus\\obj\\",
+        "outputPath": "D:\\GitHub\\My.Project.Order\\EventBus\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -132,18 +132,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100-preview.6.22352.1\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\GitHub\\X.Project.Component\\IntegrationEventLogEF\\IntegrationEventLogEF.csproj": {
+    "D:\\GitHub\\My.Project.Order\\IntegrationEventLogEF\\IntegrationEventLogEF.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GitHub\\X.Project.Component\\IntegrationEventLogEF\\IntegrationEventLogEF.csproj",
+        "projectUniqueName": "D:\\GitHub\\My.Project.Order\\IntegrationEventLogEF\\IntegrationEventLogEF.csproj",
         "projectName": "IntegrationEventLogEF",
-        "projectPath": "D:\\GitHub\\X.Project.Component\\IntegrationEventLogEF\\IntegrationEventLogEF.csproj",
+        "projectPath": "D:\\GitHub\\My.Project.Order\\IntegrationEventLogEF\\IntegrationEventLogEF.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "D:\\GitHub\\X.Project.Component\\IntegrationEventLogEF\\obj\\",
+        "outputPath": "D:\\GitHub\\My.Project.Order\\IntegrationEventLogEF\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -160,8 +160,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "D:\\GitHub\\X.Project.Component\\EventBus\\EventBus.csproj": {
-                "projectPath": "D:\\GitHub\\X.Project.Component\\EventBus\\EventBus.csproj"
+              "D:\\GitHub\\My.Project.Order\\EventBus\\EventBus.csproj": {
+                "projectPath": "D:\\GitHub\\My.Project.Order\\EventBus\\EventBus.csproj"
               }
             }
           }
@@ -205,18 +205,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100-preview.6.22352.1\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\GitHub\\X.Project.Component\\Ordering.API\\Ordering.API.csproj": {
+    "D:\\GitHub\\My.Project.Order\\Ordering.API\\Ordering.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GitHub\\X.Project.Component\\Ordering.API\\Ordering.API.csproj",
+        "projectUniqueName": "D:\\GitHub\\My.Project.Order\\Ordering.API\\Ordering.API.csproj",
         "projectName": "Ordering.API",
-        "projectPath": "D:\\GitHub\\X.Project.Component\\Ordering.API\\Ordering.API.csproj",
+        "projectPath": "D:\\GitHub\\My.Project.Order\\Ordering.API\\Ordering.API.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "D:\\GitHub\\X.Project.Component\\Ordering.API\\obj\\",
+        "outputPath": "D:\\GitHub\\My.Project.Order\\Ordering.API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -233,14 +233,14 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "D:\\GitHub\\X.Project.Component\\EventBusRabbitMQ\\EventBusRabbitMQ.csproj": {
-                "projectPath": "D:\\GitHub\\X.Project.Component\\EventBusRabbitMQ\\EventBusRabbitMQ.csproj"
+              "D:\\GitHub\\My.Project.Order\\EventBusRabbitMQ\\EventBusRabbitMQ.csproj": {
+                "projectPath": "D:\\GitHub\\My.Project.Order\\EventBusRabbitMQ\\EventBusRabbitMQ.csproj"
               },
-              "D:\\GitHub\\X.Project.Component\\IntegrationEventLogEF\\IntegrationEventLogEF.csproj": {
-                "projectPath": "D:\\GitHub\\X.Project.Component\\IntegrationEventLogEF\\IntegrationEventLogEF.csproj"
+              "D:\\GitHub\\My.Project.Order\\IntegrationEventLogEF\\IntegrationEventLogEF.csproj": {
+                "projectPath": "D:\\GitHub\\My.Project.Order\\IntegrationEventLogEF\\IntegrationEventLogEF.csproj"
               },
-              "D:\\GitHub\\X.Project.Component\\Ordering.Infrastructure\\Ordering.Infrastructure.csproj": {
-                "projectPath": "D:\\GitHub\\X.Project.Component\\Ordering.Infrastructure\\Ordering.Infrastructure.csproj"
+              "D:\\GitHub\\My.Project.Order\\Ordering.Infrastructure\\Ordering.Infrastructure.csproj": {
+                "projectPath": "D:\\GitHub\\My.Project.Order\\Ordering.Infrastructure\\Ordering.Infrastructure.csproj"
               }
             }
           }
@@ -361,18 +361,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100-preview.6.22352.1\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\GitHub\\X.Project.Component\\Ordering.Domain\\Ordering.Domain.csproj": {
+    "D:\\GitHub\\My.Project.Order\\Ordering.Domain\\Ordering.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GitHub\\X.Project.Component\\Ordering.Domain\\Ordering.Domain.csproj",
+        "projectUniqueName": "D:\\GitHub\\My.Project.Order\\Ordering.Domain\\Ordering.Domain.csproj",
         "projectName": "Ordering.Domain",
-        "projectPath": "D:\\GitHub\\X.Project.Component\\Ordering.Domain\\Ordering.Domain.csproj",
+        "projectPath": "D:\\GitHub\\My.Project.Order\\Ordering.Domain\\Ordering.Domain.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "D:\\GitHub\\X.Project.Component\\Ordering.Domain\\obj\\",
+        "outputPath": "D:\\GitHub\\My.Project.Order\\Ordering.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -430,18 +430,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100-preview.6.22352.1\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\GitHub\\X.Project.Component\\Ordering.Infrastructure\\Ordering.Infrastructure.csproj": {
+    "D:\\GitHub\\My.Project.Order\\Ordering.Infrastructure\\Ordering.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GitHub\\X.Project.Component\\Ordering.Infrastructure\\Ordering.Infrastructure.csproj",
+        "projectUniqueName": "D:\\GitHub\\My.Project.Order\\Ordering.Infrastructure\\Ordering.Infrastructure.csproj",
         "projectName": "Ordering.Infrastructure",
-        "projectPath": "D:\\GitHub\\X.Project.Component\\Ordering.Infrastructure\\Ordering.Infrastructure.csproj",
+        "projectPath": "D:\\GitHub\\My.Project.Order\\Ordering.Infrastructure\\Ordering.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "D:\\GitHub\\X.Project.Component\\Ordering.Infrastructure\\obj\\",
+        "outputPath": "D:\\GitHub\\My.Project.Order\\Ordering.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -458,8 +458,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "D:\\GitHub\\X.Project.Component\\Ordering.Domain\\Ordering.Domain.csproj": {
-                "projectPath": "D:\\GitHub\\X.Project.Component\\Ordering.Domain\\Ordering.Domain.csproj"
+              "D:\\GitHub\\My.Project.Order\\Ordering.Domain\\Ordering.Domain.csproj": {
+                "projectPath": "D:\\GitHub\\My.Project.Order\\Ordering.Domain\\Ordering.Domain.csproj"
               }
             }
           }
@@ -511,7 +511,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100-preview.6.22352.1\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

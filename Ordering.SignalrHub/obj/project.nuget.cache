@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "RHWiFEynH4C8KYjBUABTvSpXi7cpuc/EjAARm0VwG2gX8BdlUqhx5kWXJ/KL5XEo+GmBs63D3cU58+wxz7dFLQ==",
+  "dgSpecHash": "KUcERQR5osiui+AqG4vy7OM92YZK4W3StdsZZN9I7C1q98fd6tbPCiU0aua2z3vaNTvuJqEUSsgN1aFAzMbVYQ==",
   "success": true,
-  "projectFilePath": "D:\\GitHub\\X.Project.Component\\Ordering.SignalrHub\\Ordering.SignalrHub.csproj",
+  "projectFilePath": "D:\\GitHub\\My.Project.Order\\Ordering.SignalrHub\\Ordering.SignalrHub.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Administrator\\.nuget\\packages\\aspnetcore.healthchecks.rabbitmq\\6.0.2\\aspnetcore.healthchecks.rabbitmq.6.0.2.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\aspnetcore.healthchecks.ui.client\\6.0.5\\aspnetcore.healthchecks.ui.client.6.0.5.nupkg.sha512",

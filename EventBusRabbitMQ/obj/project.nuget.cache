@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "HVBzMZ4Ctk92xzDwdzKaPg0CIVu/dGJKLXtkbsSVkompYs8Yxtb7i2JgIhTKf24YQQ1aLrhhMhWpVncdvL7/Ew==",
+  "dgSpecHash": "8VDgE7TSw6TgXI5eRpEdGzco5R1cN7l6qaATkdBddzQZnNiljRYw2Qyj1jA5YjtV3tkSk5UyftSuIGwBzxRowg==",
   "success": true,
-  "projectFilePath": "D:\\GitHub\\X.Project.Component\\EventBusRabbitMQ\\EventBusRabbitMQ.csproj",
+  "projectFilePath": "D:\\GitHub\\My.Project.Order\\EventBusRabbitMQ\\EventBusRabbitMQ.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Administrator\\.nuget\\packages\\autofac\\6.4.0\\autofac.6.4.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.1\\microsoft.extensions.logging.abstractions.6.0.1.nupkg.sha512",

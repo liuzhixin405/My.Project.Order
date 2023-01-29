@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\GitHub\\X.Project.Component\\Ordering.BackgroundTasks\\Ordering.BackgroundTasks.csproj": {}
+    "D:\\GitHub\\My.Project.Order\\Ordering.BackgroundTasks\\Ordering.BackgroundTasks.csproj": {}
   },
   "projects": {
-    "D:\\GitHub\\X.Project.Component\\EventBusRabbitMQ\\EventBusRabbitMQ.csproj": {
+    "D:\\GitHub\\My.Project.Order\\EventBusRabbitMQ\\EventBusRabbitMQ.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GitHub\\X.Project.Component\\EventBusRabbitMQ\\EventBusRabbitMQ.csproj",
+        "projectUniqueName": "D:\\GitHub\\My.Project.Order\\EventBusRabbitMQ\\EventBusRabbitMQ.csproj",
         "projectName": "EventBusRabbitMQ",
-        "projectPath": "D:\\GitHub\\X.Project.Component\\EventBusRabbitMQ\\EventBusRabbitMQ.csproj",
+        "projectPath": "D:\\GitHub\\My.Project.Order\\EventBusRabbitMQ\\EventBusRabbitMQ.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "D:\\GitHub\\X.Project.Component\\EventBusRabbitMQ\\obj\\",
+        "outputPath": "D:\\GitHub\\My.Project.Order\\EventBusRabbitMQ\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "D:\\GitHub\\X.Project.Component\\EventBus\\EventBus.csproj": {
-                "projectPath": "D:\\GitHub\\X.Project.Component\\EventBus\\EventBus.csproj"
+              "D:\\GitHub\\My.Project.Order\\EventBus\\EventBus.csproj": {
+                "projectPath": "D:\\GitHub\\My.Project.Order\\EventBus\\EventBus.csproj"
               }
             }
           }
@@ -77,18 +77,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100-preview.6.22352.1\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\GitHub\\X.Project.Component\\EventBus\\EventBus.csproj": {
+    "D:\\GitHub\\My.Project.Order\\EventBus\\EventBus.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GitHub\\X.Project.Component\\EventBus\\EventBus.csproj",
+        "projectUniqueName": "D:\\GitHub\\My.Project.Order\\EventBus\\EventBus.csproj",
         "projectName": "EventBus",
-        "projectPath": "D:\\GitHub\\X.Project.Component\\EventBus\\EventBus.csproj",
+        "projectPath": "D:\\GitHub\\My.Project.Order\\EventBus\\EventBus.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "D:\\GitHub\\X.Project.Component\\EventBus\\obj\\",
+        "outputPath": "D:\\GitHub\\My.Project.Order\\EventBus\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -132,18 +132,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100-preview.6.22352.1\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\GitHub\\X.Project.Component\\Ordering.BackgroundTasks\\Ordering.BackgroundTasks.csproj": {
+    "D:\\GitHub\\My.Project.Order\\Ordering.BackgroundTasks\\Ordering.BackgroundTasks.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GitHub\\X.Project.Component\\Ordering.BackgroundTasks\\Ordering.BackgroundTasks.csproj",
+        "projectUniqueName": "D:\\GitHub\\My.Project.Order\\Ordering.BackgroundTasks\\Ordering.BackgroundTasks.csproj",
         "projectName": "Ordering.BackgroundTasks",
-        "projectPath": "D:\\GitHub\\X.Project.Component\\Ordering.BackgroundTasks\\Ordering.BackgroundTasks.csproj",
+        "projectPath": "D:\\GitHub\\My.Project.Order\\Ordering.BackgroundTasks\\Ordering.BackgroundTasks.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "D:\\GitHub\\X.Project.Component\\Ordering.BackgroundTasks\\obj\\",
+        "outputPath": "D:\\GitHub\\My.Project.Order\\Ordering.BackgroundTasks\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -160,11 +160,11 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "D:\\GitHub\\X.Project.Component\\EventBusRabbitMQ\\EventBusRabbitMQ.csproj": {
-                "projectPath": "D:\\GitHub\\X.Project.Component\\EventBusRabbitMQ\\EventBusRabbitMQ.csproj"
+              "D:\\GitHub\\My.Project.Order\\EventBusRabbitMQ\\EventBusRabbitMQ.csproj": {
+                "projectPath": "D:\\GitHub\\My.Project.Order\\EventBusRabbitMQ\\EventBusRabbitMQ.csproj"
               },
-              "D:\\GitHub\\X.Project.Component\\EventBus\\EventBus.csproj": {
-                "projectPath": "D:\\GitHub\\X.Project.Component\\EventBus\\EventBus.csproj"
+              "D:\\GitHub\\My.Project.Order\\EventBus\\EventBus.csproj": {
+                "projectPath": "D:\\GitHub\\My.Project.Order\\EventBus\\EventBus.csproj"
               }
             }
           }
@@ -231,7 +231,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100-preview.6.22352.1\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

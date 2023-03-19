@@ -190,17 +190,16 @@ namespace Ordering.API
 
         public static IServiceCollection AddCustomDbContext(this IServiceCollection services,IConfiguration configuration)
         {
-            services.AddDbContext<OrderingContext>(os =>
+            services.AddDbContext<OrderingContext>((sp,os) =>
             {
                 os.UseSqlServer(configuration["ConnectionString"],
                     sqlOptions =>
                     {
                         sqlOptions.MigrationsAssembly(typeof(Program).GetTypeInfo().Assembly.GetName().Name);
                         sqlOptions.EnableRetryOnFailure(15, TimeSpan.FromSeconds(30), null);
-                    }
-                   
-                    );
-                os.AddInterceptors(new MyInterceptor());
+                    });
+                var interceptor = sp.GetService<ConvertDomainEventsOutBoxMessageInterceptor>();
+                os.AddInterceptors(interceptor);
             },
                     ServiceLifetime.Scoped
                 );

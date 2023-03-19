@@ -1,10 +1,13 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Diagnostics;
 using Ordering.Domain.SeedWork;
+using System;
+using System.Data;
+using System.Text.Json.Serialization;
 
 namespace Ordering.API.Interceptors
 {
-    public sealed class MyInterceptor:SaveChangesInterceptor
+    public sealed class ConvertDomainEventsOutBoxMessageInterceptor:SaveChangesInterceptor
     {
         public override ValueTask<InterceptionResult<int>> SavingChangesAsync(DbContextEventData eventData, InterceptionResult<int> result, CancellationToken cancellationToken = default)
         {
@@ -16,14 +19,28 @@ namespace Ordering.API.Interceptors
             var events = dbContxt.ChangeTracker.Entries<Entity>().Select(x => x.Entity).SelectMany(x =>
             {
                 var domains = x.DomainEvents;
-                //todo
+                x.ClearDomainEvents();
                 return domains;
 
-            }).Select(x => new OutBoxMessage { }).ToList();
+            }).Select(x => new OutBoxMessage {
+            Id=Guid.NewGuid(),
+            OccurredOnUtc = DateTime.UtcNow,
+            Type = x.GetType().Name,
+            Content = System.Text.Json.JsonSerializer.Serialize(x)
+            }).ToList();
              dbContxt.Set<OutBoxMessage>().AddRangeAsync(events);
            return base.SavingChangesAsync(eventData, result, cancellationToken); //后台定时任务获取事件，再发送，就不再需要再dbcontext里面用mediator
         }
     }
 
-    public class OutBoxMessage { }
+    public class OutBoxMessage 
+    {
+        public Guid Id { get; set; }
+        public string Type { get; set; } = string.Empty;
+        public string Content { get; set; } = string.Empty;
+        public DateTime OccurredOnUtc { get; set; }
+        public DateTime? ProceddedOnUtc { get; set; }
+        public string? Error { get; set; }
+
+    }
 }

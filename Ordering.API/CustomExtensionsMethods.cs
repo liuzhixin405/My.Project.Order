@@ -19,6 +19,7 @@ using Ordering.API.Controllers;
 using Ordering.API.Infrastructure.AutofacModules;
 using Ordering.API.Infrastructure.Filters;
 using Ordering.API.Infrastructure.Services;
+using Ordering.API.Interceptors;
 using Ordering.Infrastructure;
 using Polly;
 using RabbitMQ.Client;
@@ -196,7 +197,10 @@ namespace Ordering.API
                     {
                         sqlOptions.MigrationsAssembly(typeof(Program).GetTypeInfo().Assembly.GetName().Name);
                         sqlOptions.EnableRetryOnFailure(15, TimeSpan.FromSeconds(30), null);
-                    });
+                    }
+                   
+                    );
+                os.AddInterceptors(new MyInterceptor());
             },
                     ServiceLifetime.Scoped
                 );

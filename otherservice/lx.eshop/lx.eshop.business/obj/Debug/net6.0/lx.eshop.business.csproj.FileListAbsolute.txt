@@ -1,0 +1,15 @@
+C:\Users\Administrator\Desktop\Services\lx.eshop\lx.eshop.business\bin\Debug\net6.0\lx.eshop.business.deps.json
+C:\Users\Administrator\Desktop\Services\lx.eshop\lx.eshop.business\bin\Debug\net6.0\lx.eshop.business.dll
+C:\Users\Administrator\Desktop\Services\lx.eshop\lx.eshop.business\bin\Debug\net6.0\lx.eshop.business.pdb
+C:\Users\Administrator\Desktop\Services\lx.eshop\lx.eshop.business\bin\Debug\net6.0\lx.eshop.models.dll
+C:\Users\Administrator\Desktop\Services\lx.eshop\lx.eshop.business\bin\Debug\net6.0\lx.eshop.models.pdb
+C:\Users\Administrator\Desktop\Services\lx.eshop\lx.eshop.business\obj\Debug\net6.0\lx.eshop.business.csproj.AssemblyReference.cache
+C:\Users\Administrator\Desktop\Services\lx.eshop\lx.eshop.business\obj\Debug\net6.0\lx.eshop.business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrator\Desktop\Services\lx.eshop\lx.eshop.business\obj\Debug\net6.0\lx.eshop.business.AssemblyInfoInputs.cache
+C:\Users\Administrator\Desktop\Services\lx.eshop\lx.eshop.business\obj\Debug\net6.0\lx.eshop.business.AssemblyInfo.cs
+C:\Users\Administrator\Desktop\Services\lx.eshop\lx.eshop.business\obj\Debug\net6.0\lx.eshop.business.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\Services\lx.eshop\lx.eshop.business\obj\Debug\net6.0\lx.eshop.business.csproj.CopyComplete
+C:\Users\Administrator\Desktop\Services\lx.eshop\lx.eshop.business\obj\Debug\net6.0\lx.eshop.business.dll
+C:\Users\Administrator\Desktop\Services\lx.eshop\lx.eshop.business\obj\Debug\net6.0\refint\lx.eshop.business.dll
+C:\Users\Administrator\Desktop\Services\lx.eshop\lx.eshop.business\obj\Debug\net6.0\lx.eshop.business.pdb
+C:\Users\Administrator\Desktop\Services\lx.eshop\lx.eshop.business\obj\Debug\net6.0\ref\lx.eshop.business.dll

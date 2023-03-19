@@ -1,0 +1,12 @@
+C:\Users\Administrator\Desktop\Services\lx.eshop\lx.eshop.models\bin\Debug\net6.0\lx.eshop.models.deps.json
+C:\Users\Administrator\Desktop\Services\lx.eshop\lx.eshop.models\bin\Debug\net6.0\lx.eshop.models.dll
+C:\Users\Administrator\Desktop\Services\lx.eshop\lx.eshop.models\bin\Debug\net6.0\lx.eshop.models.pdb
+C:\Users\Administrator\Desktop\Services\lx.eshop\lx.eshop.models\obj\Debug\net6.0\lx.eshop.models.csproj.AssemblyReference.cache
+C:\Users\Administrator\Desktop\Services\lx.eshop\lx.eshop.models\obj\Debug\net6.0\lx.eshop.models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrator\Desktop\Services\lx.eshop\lx.eshop.models\obj\Debug\net6.0\lx.eshop.models.AssemblyInfoInputs.cache
+C:\Users\Administrator\Desktop\Services\lx.eshop\lx.eshop.models\obj\Debug\net6.0\lx.eshop.models.AssemblyInfo.cs
+C:\Users\Administrator\Desktop\Services\lx.eshop\lx.eshop.models\obj\Debug\net6.0\lx.eshop.models.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\Services\lx.eshop\lx.eshop.models\obj\Debug\net6.0\lx.eshop.models.dll
+C:\Users\Administrator\Desktop\Services\lx.eshop\lx.eshop.models\obj\Debug\net6.0\refint\lx.eshop.models.dll
+C:\Users\Administrator\Desktop\Services\lx.eshop\lx.eshop.models\obj\Debug\net6.0\lx.eshop.models.pdb
+C:\Users\Administrator\Desktop\Services\lx.eshop\lx.eshop.models\obj\Debug\net6.0\ref\lx.eshop.models.dll

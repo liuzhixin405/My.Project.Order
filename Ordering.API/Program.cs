@@ -5,6 +5,7 @@ using EventBus.Abstractions;
 using GrpcOrdering;
 using HealthChecks.UI.Client;
 using IntegrationEventLogEF;
+using MediatR;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 using Microsoft.AspNetCore.Server.Kestrel.Core;
 using Microsoft.Data.SqlClient;
@@ -15,6 +16,7 @@ using Ordering.API.Application.IntegrationEvents.Events;
 using Ordering.API.Infrastructure;
 using Ordering.API.Infrastructure.AutofacModules;
 using Ordering.Infrastructure;
+using Ordering.Infrastructure.Idempotency;
 using Polly;
 using Serilog;
 using System.Net;
@@ -68,10 +70,10 @@ try
 
         //return new AutofacServiceProvider(container.Build());
     });
-    
+
     //var startup = new Startup(builder.Configuration);
     //startup.ConfigureServices(builder.Services);
-
+    builder.Services.AddScoped(typeof(INotificationHandler<>), typeof(IdempotentDomainEventHandler<>)); ;
 
     Log.Information("Starting web host ({ApplicationContext})...", Program.AppName);
     var app = builder.Build();

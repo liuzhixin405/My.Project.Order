@@ -35,6 +35,7 @@
 
   <ItemGroup>
     <Folder Include="Application\IntegrationEvents\EventHandling\" />
+    <Folder Include="Infrastructure\Migrations\" />
   </ItemGroup>
 	<ItemGroup>
 		<Protobuf Include="Proto\ordering.proto" GrpcServices="Server" Generator="MSBuild:Compile" />

@@ -11,7 +11,7 @@ using System.Net;
 namespace Ordering.API.Controllers
 {
     [Route("api/v1/[controller]")]
-    [Authorize]
+    //[Authorize]
     [ApiController]
     public class OrdersController : ControllerBase
     {

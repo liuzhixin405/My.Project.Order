@@ -104,7 +104,7 @@ namespace Ordering.Infrastructure
         public OrderingContext CreateDbContext(string[] args)
         {
             var optionsBuilder = new DbContextOptionsBuilder<OrderingContext>()
-               .UseSqlServer("Server=.;Initial Catalog=Microsoft.eShopOnContainers.Services.OrderingDb;Integrated Security=true");
+               .UseSqlServer("Server=IOS;Initial Catalog=OrderingDb;Integrated Security=true;Persist Security Info=False;User ID=sa;Password=1230;");
 
             return new OrderingContext(optionsBuilder.Options, new NoMediator());
         }

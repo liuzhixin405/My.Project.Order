@@ -10,7 +10,6 @@ namespace Ordering.API.Infrastructure.IntegrationEventMigrations
         {
             var optionsBuilder = new DbContextOptionsBuilder<IntegrationEventLogContext>();
             optionsBuilder.UseSqlServer(".", options => options.MigrationsAssembly(GetType().Assembly.GetName().Name));
-
             return new IntegrationEventLogContext(optionsBuilder.Options);
         }
     }

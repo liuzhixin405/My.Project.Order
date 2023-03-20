@@ -8,7 +8,7 @@ namespace IntegrationEventLogEF
 {
     public enum EventStateEnum
     {
-        NoPublished = 0,
+        NotPublished = 0,
         InProgress=1,
         Published = 2,
         PublishedFailed=3

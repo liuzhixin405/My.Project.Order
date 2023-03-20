@@ -16,7 +16,6 @@ namespace Ordering.API.Infrastructure
         public async Task SeedAsync(OrderingContext context, IWebHostEnvironment env, IOptions<OrderingSettings> settings, ILogger<OrderingContextSeed> logger)
         {
             var policy = CreatePolicy(logger, nameof(OrderingContextSeed));
-
             await policy.ExecuteAsync(async () =>
             {
 
@@ -24,12 +23,7 @@ namespace Ordering.API.Infrastructure
                 .UseCustomizationData;
 
                 var contentRootPath = env.ContentRootPath;
-
-
-                using (context)
-                {
-                    context.Database.Migrate();
-
+             
                     if (!context.CardTypes.Any())
                     {
                         context.CardTypes.AddRange(useCustomizationData
@@ -47,7 +41,6 @@ namespace Ordering.API.Infrastructure
                     }
 
                     await context.SaveChangesAsync();
-                }
             });
         }
 

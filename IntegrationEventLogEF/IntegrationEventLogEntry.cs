@@ -1,6 +1,7 @@
 ﻿using EventBus.Events;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Text.Json;
@@ -16,15 +17,17 @@ namespace IntegrationEventLogEF
         {
             EventId = @event.Id;
             CreationTime = @event.CreationDate;
-            EventTypeName = @event.GetType().FullName ?? throw new ArgumentNullException(nameof(@event));
+            EventTypeName = @event.GetType().FullName ;
             Content = JsonSerializer.Serialize(@event, @event.GetType(), new JsonSerializerOptions { WriteIndented = true });
-            State = EventStateEnum.NoPublished;
+            State = EventStateEnum.NotPublished;
             TransactionId = transactionId.ToString();
         }
 
         public Guid EventId { get; private set; }
         public string EventTypeName { get; private set; }
-        public string EventTypeShortName=> EventTypeName.Split('.')?.Last()?? throw new ArgumentNullException(nameof(EventTypeName));
+        [NotMapped]
+        public string EventTypeShortName=> EventTypeName.Split('.')?.Last();
+        [NotMapped]
         public IntegrationEvent IntegrationEvent { get; private set; }
         public EventStateEnum State { get; set; }
         public int TimesSent { get; set; }

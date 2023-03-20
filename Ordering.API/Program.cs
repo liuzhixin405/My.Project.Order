@@ -1,4 +1,5 @@
 using Autofac;
+using Autofac.Core;
 using Autofac.Extensions.DependencyInjection;
 using Azure.Core;
 using EventBus.Abstractions;
@@ -9,6 +10,8 @@ using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 using Microsoft.AspNetCore.Server.Kestrel.Core;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Storage;
 using Microsoft.Extensions.Options;
 using Ordering.API;
 using Ordering.API.Application.IntegrationEvents.Events;
@@ -44,13 +47,8 @@ try
     //builder.WebHost.UseContentRoot(Directory.GetCurrentDirectory()).UseStartup<Startup>();
     builder.Host.UseSerilog();
     builder.Host.UseServiceProviderFactory(new AutofacServiceProviderFactory());
-    builder.Host.ConfigureServices(services =>
-    {
-        services.AddGrpc(o =>
-        {
-            o.EnableDetailedErrors = true;
-        })
-               .Services
+    builder.Services.AddGrpc(o => o.EnableDetailedErrors = true);
+    builder.Services
                .AddApplicationInsights(configuration)
                .AddCustomMvc()
                .AddHealthChecks(configuration)
@@ -60,29 +58,29 @@ try
                .AddCustomConfiguration(configuration)
                .AddEventBus(configuration)
                .AddCustomAuthentication(configuration);
-
-        var container = new ContainerBuilder();
-        container.Populate(services);
-        container.RegisterModule(new MediatorModule());
-        container.RegisterModule(new ApplicationModule(configuration["ConnectionString"]));
-
-        //return new AutofacServiceProvider(container.Build());
+    builder.Host.UseServiceProviderFactory(new AutofacServiceProviderFactory());
+    builder.Host.ConfigureContainer<ContainerBuilder>(builder =>
+    {
+        builder.RegisterModule(new MediatorModule());
+        builder.RegisterModule(new ApplicationModule(configuration["ConnectionString"]));
     });
-    
-    //var startup = new Startup(builder.Configuration);
-    //startup.ConfigureServices(builder.Services);
+
+    builder.MigrateDbContext<OrderingContext>(() =>{})
+        .MigrateDbContext<IntegrationEventLogContext>(() => { });
+    using var scope = builder.Services.BuildServiceProvider().CreateScope();
+    var services = scope.ServiceProvider;
+    {
+        var context = services.GetService<OrderingContext>();
+        var env = services.GetService<IWebHostEnvironment>();
+        var settings = services.GetService<IOptions<OrderingSettings>>();
+        var logger = services.GetService<ILogger<OrderingContextSeed>>();
+        new OrderingContextSeed().SeedAsync(context, env, settings, logger).Wait();
+    };
 
 
     Log.Information("Starting web host ({ApplicationContext})...", Program.AppName);
     var app = builder.Build();
-    MigrateDbContext<OrderingContext>(app.Services,async (context, services) =>
-    {
-        var env = services.GetRequiredService<IWebHostEnvironment>();
-        var settings = services.GetService<IOptions<OrderingSettings>>();
-        var logger = services.GetService<ILogger<OrderingContextSeed>>();
-        await new OrderingContextSeed().SeedAsync(context, env, settings, logger);
-    });
-    MigrateDbContext<IntegrationEventLogContext>(app.Services,(_, _) => { });
+   
     //startup.Configure(app, builder.Environment);
     Configure(app, app.Environment);
     app.Run();
@@ -131,41 +129,6 @@ Serilog.ILogger CreateSerilogLogger(IConfiguration configuration)
         .CreateLogger();
 }
 
-void MigrateDbContext<TContext>(IServiceProvider service, Action<TContext, IServiceProvider> seeder) where TContext : DbContext
-{
-    using (var scope = service.CreateAsyncScope())
-    {
-        var services = scope.ServiceProvider;
-        var logger = services.GetRequiredService<ILogger<TContext>>();
-        var context = services.GetService<TContext>();
-        try
-        {
-            logger.LogInformation("Migrating database associated with context {DbContextName}", typeof(TContext).Name);
-            var retries = 10;
-            var retry = Policy.Handle<SqlException>()
-                .WaitAndRetry(
-                retries,
-                retryAttempt => TimeSpan.FromSeconds(Math.Pow(2, retryAttempt)),
-                (exception, timeSpan, retry, ctx) =>
-                {
-                    logger.LogWarning(exception, "[{prefix}] Exception {ExceptionType} with message {Message} detected on attempt {retry} of {retries}", nameof(TContext), exception.GetType().Name, exception.Message, retry, retries);
-                });
-            retry.Execute(() => InvokeSeeder<TContext>(seeder, context, services));
-        }
-        catch (Exception ex)
-        {
-            logger.LogError(ex, "An error occurred while migrating the database used on context {DbContextName}", typeof(TContext).Name);
-        }
-    }
-}
-
-void InvokeSeeder<TContext>(Action<TContext, IServiceProvider> seeder, TContext context, IServiceProvider services)
-    where TContext : DbContext
-{
-    context.Database.EnsureCreated();
-    context.Database.Migrate();
-    seeder(context, services);
-}
 void Configure(IApplicationBuilder app, IWebHostEnvironment env)
 {
     var pathBase = configuration["PATH_BASE"];
@@ -237,13 +200,14 @@ void ConfigureAuth(IApplicationBuilder app)
 }
 static partial class CustomExtensionsMethods
 {
-    public static IWebHost MigrateDbContext<TContext>(this IWebHost host, Action<TContext, IServiceProvider> seeder) where TContext : DbContext
+    public static WebApplicationBuilder MigrateDbContext<TContext>(this WebApplicationBuilder builder,Action action) where TContext : DbContext
     {
-        using (var scope = host.Services.CreateScope())
+
+        using (var services = builder.Services.BuildServiceProvider())
         {
-            var services = scope.ServiceProvider;
+            var scope = services.CreateAsyncScope();
             var logger = services.GetRequiredService<ILogger<TContext>>();
-            var context = services.GetService<TContext>();
+            var context = scope.ServiceProvider.GetService<TContext>();
 
             try
             {
@@ -264,7 +228,7 @@ static partial class CustomExtensionsMethods
                 //migration can't fail for network related exception. The retry options for DbContext only 
                 //apply to transient exceptions
                 // Note that this is NOT applied when running some orchestrators (let the orchestrator to recreate the failing service)
-                retry.Execute(() => InvokeSeeder(seeder, context, services));
+                retry.Execute(() => InvokeSeeder(action, context));
 
 
                 logger.LogInformation("Migrated database associated with context {DbContextName}", typeof(TContext).Name);
@@ -276,13 +240,18 @@ static partial class CustomExtensionsMethods
             }
         }
 
-        return host;
+        return builder;
     }
-    private static void InvokeSeeder<TContext>(Action<TContext, IServiceProvider> seeder, TContext context, IServiceProvider services)
+    private static void InvokeSeeder<TContext>(Action seeder, TContext context)
       where TContext : DbContext
     {
-        context.Database.Migrate();
-        seeder(context, services);
+        if (!(context.GetService<IDatabaseCreator>() as RelationalDatabaseCreator).Exists()) //数据库不存在自动创建，并建表
+        {
+            context.Database.EnsureDeleted();
+            context.Database.EnsureCreated();
+        }
+        //context.Database.Migrate();
+        seeder();
     }
 }
     public partial class Program

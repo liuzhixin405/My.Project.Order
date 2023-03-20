@@ -18,7 +18,7 @@ namespace IntegrationEventLogEF
             CreationTime = @event.CreationDate;
             EventTypeName = @event.GetType().FullName ?? throw new ArgumentNullException(nameof(@event));
             Content = JsonSerializer.Serialize(@event, @event.GetType(), new JsonSerializerOptions { WriteIndented = true });
-            State = EventStateEnum.NoPublished;
+            State = EventStateEnum.NotPublished;
             TransactionId = transactionId.ToString();
         }
 

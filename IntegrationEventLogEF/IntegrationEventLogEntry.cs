@@ -1,6 +1,7 @@
 ﻿using EventBus.Events;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Text.Json;
@@ -24,7 +25,9 @@ namespace IntegrationEventLogEF
 
         public Guid EventId { get; private set; }
         public string EventTypeName { get; private set; }
+        [NotMapped]
         public string EventTypeShortName=> EventTypeName.Split('.')?.Last()?? throw new ArgumentNullException(nameof(EventTypeName));
+        [NotMapped]
         public IntegrationEvent IntegrationEvent { get; private set; }
         public EventStateEnum State { get; set; }
         public int TimesSent { get; set; }

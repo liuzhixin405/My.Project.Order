@@ -5,6 +5,7 @@ using Ordering.API.Application.Behaviors;
 using Ordering.API.Application.Commands;
 using Ordering.API.Application.DomainEventHandlers.OrderStartedEvent;
 using Ordering.API.Application.Validations;
+using Ordering.Infrastructure.Idempotency;
 using System.Reflection;
 
 namespace Ordering.API.Infrastructure.AutofacModules
@@ -30,6 +31,7 @@ namespace Ordering.API.Infrastructure.AutofacModules
             builder.RegisterGeneric(typeof(LoggingBehavior<,>)).As(typeof(IPipelineBehavior<,>));
             builder.RegisterGeneric(typeof(ValidatorBehavior<,>)).As(typeof(IPipelineBehavior<,>));
             builder.RegisterGeneric(typeof(TransactionBehaviour<,>)).As(typeof(IPipelineBehavior<,>));
+            builder.RegisterGeneric(typeof(IdempotentDomainEventHandler<>)).As(typeof(IDomainEventHandler<>));
         }
     }
 }

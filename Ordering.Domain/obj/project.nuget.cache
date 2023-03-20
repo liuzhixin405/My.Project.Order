@@ -1,14 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "SsdZaZgrINHkYLQEH8kv1A4HC4IqWxOZIS2rBaUDzIsJaQnYL7DXtxEiCYGnotJb+IwJQAB6bMVHLUKo7yrzfg==",
+  "dgSpecHash": "vbGcIONcEIC+8tuLs2X/8p3j3ZND4fgs5CAY4ITipblepn6RVIf6EabqPPbh1shLnyzxCEo/Cf78Y7zr9qqYrg==",
   "success": true,
-  "projectFilePath": "D:\\GitHub\\My.Project.Order\\Ordering.Domain\\Ordering.Domain.csproj",
+  "projectFilePath": "G:\\Users\\GitHub\\My.Project.Order\\Ordering.Domain\\Ordering.Domain.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Administrator\\.nuget\\packages\\mediatr\\10.0.1\\mediatr.10.0.1.nupkg.sha512",
-    "C:\\Users\\Administrator\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
-    "C:\\Users\\Administrator\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\10.0.1\\mediatr.extensions.microsoft.dependencyinjection.10.0.1.nupkg.sha512",
-    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
-    "C:\\Users\\Administrator\\.nuget\\packages\\system.reflection.typeextensions\\4.7.0\\system.reflection.typeextensions.4.7.0.nupkg.sha512"
+    "C:\\Users\\86130\\.nuget\\packages\\mediatr\\10.0.1\\mediatr.10.0.1.nupkg.sha512",
+    "C:\\Users\\86130\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
+    "C:\\Users\\86130\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\10.0.1\\mediatr.extensions.microsoft.dependencyinjection.10.0.1.nupkg.sha512",
+    "C:\\Users\\86130\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\86130\\.nuget\\packages\\system.reflection.typeextensions\\4.7.0\\system.reflection.typeextensions.4.7.0.nupkg.sha512"
   ],
   "logs": []
 }

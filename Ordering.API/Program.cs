@@ -127,7 +127,7 @@ Serilog.ILogger CreateSerilogLogger(IConfiguration configuration)
 
 void MigrateDbContext<TContext>(IServiceProvider service, Action<TContext, IServiceProvider> seeder) where TContext : DbContext
 {
-    using (var scope = service.CreateAsyncScope())
+     var scope = service.CreateAsyncScope();
     {
         var services = scope.ServiceProvider;
         var logger = services.GetRequiredService<ILogger<TContext>>();

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\GitHub\\My.Project.Order\\Ordering.API\\Ordering.API.csproj": {}
+    "G:\\Users\\GitHub\\My.Project.Order\\Ordering.API\\Ordering.API.csproj": {}
   },
   "projects": {
-    "D:\\GitHub\\My.Project.Order\\EventBusRabbitMQ\\EventBusRabbitMQ.csproj": {
+    "G:\\Users\\GitHub\\My.Project.Order\\EventBusRabbitMQ\\EventBusRabbitMQ.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GitHub\\My.Project.Order\\EventBusRabbitMQ\\EventBusRabbitMQ.csproj",
+        "projectUniqueName": "G:\\Users\\GitHub\\My.Project.Order\\EventBusRabbitMQ\\EventBusRabbitMQ.csproj",
         "projectName": "EventBusRabbitMQ",
-        "projectPath": "D:\\GitHub\\My.Project.Order\\EventBusRabbitMQ\\EventBusRabbitMQ.csproj",
-        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "D:\\GitHub\\My.Project.Order\\EventBusRabbitMQ\\obj\\",
+        "projectPath": "G:\\Users\\GitHub\\My.Project.Order\\EventBusRabbitMQ\\EventBusRabbitMQ.csproj",
+        "packagesPath": "C:\\Users\\86130\\.nuget\\packages\\",
+        "outputPath": "G:\\Users\\GitHub\\My.Project.Order\\EventBusRabbitMQ\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\86130\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,14 +22,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nexus.klickl.com/repository/klickl": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "D:\\GitHub\\My.Project.Order\\EventBus\\EventBus.csproj": {
-                "projectPath": "D:\\GitHub\\My.Project.Order\\EventBus\\EventBus.csproj"
+              "G:\\Users\\GitHub\\My.Project.Order\\EventBus\\EventBus.csproj": {
+                "projectPath": "G:\\Users\\GitHub\\My.Project.Order\\EventBus\\EventBus.csproj"
               }
             }
           }
@@ -77,21 +78,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\GitHub\\My.Project.Order\\EventBus\\EventBus.csproj": {
+    "G:\\Users\\GitHub\\My.Project.Order\\EventBus\\EventBus.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GitHub\\My.Project.Order\\EventBus\\EventBus.csproj",
+        "projectUniqueName": "G:\\Users\\GitHub\\My.Project.Order\\EventBus\\EventBus.csproj",
         "projectName": "EventBus",
-        "projectPath": "D:\\GitHub\\My.Project.Order\\EventBus\\EventBus.csproj",
-        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "D:\\GitHub\\My.Project.Order\\EventBus\\obj\\",
+        "projectPath": "G:\\Users\\GitHub\\My.Project.Order\\EventBus\\EventBus.csproj",
+        "packagesPath": "C:\\Users\\86130\\.nuget\\packages\\",
+        "outputPath": "G:\\Users\\GitHub\\My.Project.Order\\EventBus\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\86130\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -99,7 +100,8 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nexus.klickl.com/repository/klickl": {}
         },
         "frameworks": {
           "net7.0": {
@@ -132,21 +134,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\GitHub\\My.Project.Order\\IntegrationEventLogEF\\IntegrationEventLogEF.csproj": {
+    "G:\\Users\\GitHub\\My.Project.Order\\IntegrationEventLogEF\\IntegrationEventLogEF.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GitHub\\My.Project.Order\\IntegrationEventLogEF\\IntegrationEventLogEF.csproj",
+        "projectUniqueName": "G:\\Users\\GitHub\\My.Project.Order\\IntegrationEventLogEF\\IntegrationEventLogEF.csproj",
         "projectName": "IntegrationEventLogEF",
-        "projectPath": "D:\\GitHub\\My.Project.Order\\IntegrationEventLogEF\\IntegrationEventLogEF.csproj",
-        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "D:\\GitHub\\My.Project.Order\\IntegrationEventLogEF\\obj\\",
+        "projectPath": "G:\\Users\\GitHub\\My.Project.Order\\IntegrationEventLogEF\\IntegrationEventLogEF.csproj",
+        "packagesPath": "C:\\Users\\86130\\.nuget\\packages\\",
+        "outputPath": "G:\\Users\\GitHub\\My.Project.Order\\IntegrationEventLogEF\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\86130\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -154,14 +156,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nexus.klickl.com/repository/klickl": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "D:\\GitHub\\My.Project.Order\\EventBus\\EventBus.csproj": {
-                "projectPath": "D:\\GitHub\\My.Project.Order\\EventBus\\EventBus.csproj"
+              "G:\\Users\\GitHub\\My.Project.Order\\EventBus\\EventBus.csproj": {
+                "projectPath": "G:\\Users\\GitHub\\My.Project.Order\\EventBus\\EventBus.csproj"
               }
             }
           }
@@ -178,15 +181,15 @@
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[7.0.0-preview.6.22329.4, )"
+              "version": "[7.0.4, )"
             },
             "Microsoft.EntityFrameworkCore.Relational": {
               "target": "Package",
-              "version": "[7.0.0-preview.6.22329.4, )"
+              "version": "[7.0.4, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[7.0.0-preview.6.22329.4, )"
+              "version": "[7.0.4, )"
             }
           },
           "imports": [
@@ -205,21 +208,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\GitHub\\My.Project.Order\\Ordering.API\\Ordering.API.csproj": {
+    "G:\\Users\\GitHub\\My.Project.Order\\Ordering.API\\Ordering.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GitHub\\My.Project.Order\\Ordering.API\\Ordering.API.csproj",
+        "projectUniqueName": "G:\\Users\\GitHub\\My.Project.Order\\Ordering.API\\Ordering.API.csproj",
         "projectName": "Ordering.API",
-        "projectPath": "D:\\GitHub\\My.Project.Order\\Ordering.API\\Ordering.API.csproj",
-        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "D:\\GitHub\\My.Project.Order\\Ordering.API\\obj\\",
+        "projectPath": "G:\\Users\\GitHub\\My.Project.Order\\Ordering.API\\Ordering.API.csproj",
+        "packagesPath": "C:\\Users\\86130\\.nuget\\packages\\",
+        "outputPath": "G:\\Users\\GitHub\\My.Project.Order\\Ordering.API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\86130\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -227,20 +230,21 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nexus.klickl.com/repository/klickl": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "D:\\GitHub\\My.Project.Order\\EventBusRabbitMQ\\EventBusRabbitMQ.csproj": {
-                "projectPath": "D:\\GitHub\\My.Project.Order\\EventBusRabbitMQ\\EventBusRabbitMQ.csproj"
+              "G:\\Users\\GitHub\\My.Project.Order\\EventBusRabbitMQ\\EventBusRabbitMQ.csproj": {
+                "projectPath": "G:\\Users\\GitHub\\My.Project.Order\\EventBusRabbitMQ\\EventBusRabbitMQ.csproj"
               },
-              "D:\\GitHub\\My.Project.Order\\IntegrationEventLogEF\\IntegrationEventLogEF.csproj": {
-                "projectPath": "D:\\GitHub\\My.Project.Order\\IntegrationEventLogEF\\IntegrationEventLogEF.csproj"
+              "G:\\Users\\GitHub\\My.Project.Order\\IntegrationEventLogEF\\IntegrationEventLogEF.csproj": {
+                "projectPath": "G:\\Users\\GitHub\\My.Project.Order\\IntegrationEventLogEF\\IntegrationEventLogEF.csproj"
               },
-              "D:\\GitHub\\My.Project.Order\\Ordering.Infrastructure\\Ordering.Infrastructure.csproj": {
-                "projectPath": "D:\\GitHub\\My.Project.Order\\Ordering.Infrastructure\\Ordering.Infrastructure.csproj"
+              "G:\\Users\\GitHub\\My.Project.Order\\Ordering.Infrastructure\\Ordering.Infrastructure.csproj": {
+                "projectPath": "G:\\Users\\GitHub\\My.Project.Order\\Ordering.Infrastructure\\Ordering.Infrastructure.csproj"
               }
             }
           }
@@ -309,6 +313,16 @@
               "target": "Package",
               "version": "[7.0.0-preview.6.22330.3, )"
             },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[7.0.4, )"
+            },
             "Serilog": {
               "target": "Package",
               "version": "[2.11.0, )"
@@ -361,21 +375,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\GitHub\\My.Project.Order\\Ordering.Domain\\Ordering.Domain.csproj": {
+    "G:\\Users\\GitHub\\My.Project.Order\\Ordering.Domain\\Ordering.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GitHub\\My.Project.Order\\Ordering.Domain\\Ordering.Domain.csproj",
+        "projectUniqueName": "G:\\Users\\GitHub\\My.Project.Order\\Ordering.Domain\\Ordering.Domain.csproj",
         "projectName": "Ordering.Domain",
-        "projectPath": "D:\\GitHub\\My.Project.Order\\Ordering.Domain\\Ordering.Domain.csproj",
-        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "D:\\GitHub\\My.Project.Order\\Ordering.Domain\\obj\\",
+        "projectPath": "G:\\Users\\GitHub\\My.Project.Order\\Ordering.Domain\\Ordering.Domain.csproj",
+        "packagesPath": "C:\\Users\\86130\\.nuget\\packages\\",
+        "outputPath": "G:\\Users\\GitHub\\My.Project.Order\\Ordering.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\86130\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -383,7 +397,8 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nexus.klickl.com/repository/klickl": {}
         },
         "frameworks": {
           "net7.0": {
@@ -430,21 +445,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\GitHub\\My.Project.Order\\Ordering.Infrastructure\\Ordering.Infrastructure.csproj": {
+    "G:\\Users\\GitHub\\My.Project.Order\\Ordering.Infrastructure\\Ordering.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GitHub\\My.Project.Order\\Ordering.Infrastructure\\Ordering.Infrastructure.csproj",
+        "projectUniqueName": "G:\\Users\\GitHub\\My.Project.Order\\Ordering.Infrastructure\\Ordering.Infrastructure.csproj",
         "projectName": "Ordering.Infrastructure",
-        "projectPath": "D:\\GitHub\\My.Project.Order\\Ordering.Infrastructure\\Ordering.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "D:\\GitHub\\My.Project.Order\\Ordering.Infrastructure\\obj\\",
+        "projectPath": "G:\\Users\\GitHub\\My.Project.Order\\Ordering.Infrastructure\\Ordering.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\86130\\.nuget\\packages\\",
+        "outputPath": "G:\\Users\\GitHub\\My.Project.Order\\Ordering.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\86130\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -452,14 +467,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nexus.klickl.com/repository/klickl": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "D:\\GitHub\\My.Project.Order\\Ordering.Domain\\Ordering.Domain.csproj": {
-                "projectPath": "D:\\GitHub\\My.Project.Order\\Ordering.Domain\\Ordering.Domain.csproj"
+              "G:\\Users\\GitHub\\My.Project.Order\\Ordering.Domain\\Ordering.Domain.csproj": {
+                "projectPath": "G:\\Users\\GitHub\\My.Project.Order\\Ordering.Domain\\Ordering.Domain.csproj"
               }
             }
           }
@@ -484,15 +500,19 @@
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[7.0.0-preview.6.22329.4, )"
+              "version": "[7.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Abstractions": {
+              "target": "Package",
+              "version": "[7.0.4, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[7.0.0-preview.6.22329.4, )"
+              "version": "[7.0.4, )"
             },
             "Microsoft.Extensions.Logging.Abstractions": {
               "target": "Package",
-              "version": "[7.0.0-preview.6.22324.4, )"
+              "version": "[7.0.0, )"
             }
           },
           "imports": [
@@ -511,7 +531,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     }

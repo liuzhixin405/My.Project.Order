@@ -3085,19 +3085,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\86130\\.nuget\\packages\\": {}
+    "C:\\Users\\Administrator\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "G:\\Users\\GitHub\\My.Project.Order\\IntegrationEventLogEF\\IntegrationEventLogEF.csproj",
+      "projectUniqueName": "D:\\GitHub\\My.Project.Order\\IntegrationEventLogEF\\IntegrationEventLogEF.csproj",
       "projectName": "IntegrationEventLogEF",
-      "projectPath": "G:\\Users\\GitHub\\My.Project.Order\\IntegrationEventLogEF\\IntegrationEventLogEF.csproj",
-      "packagesPath": "C:\\Users\\86130\\.nuget\\packages\\",
-      "outputPath": "G:\\Users\\GitHub\\My.Project.Order\\IntegrationEventLogEF\\obj\\",
+      "projectPath": "D:\\GitHub\\My.Project.Order\\IntegrationEventLogEF\\IntegrationEventLogEF.csproj",
+      "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+      "outputPath": "D:\\GitHub\\My.Project.Order\\IntegrationEventLogEF\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\86130\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3105,15 +3105,14 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {},
-        "https://nexus.klickl.com/repository/klickl": {}
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "G:\\Users\\GitHub\\My.Project.Order\\EventBus\\EventBus.csproj": {
-              "projectPath": "G:\\Users\\GitHub\\My.Project.Order\\EventBus\\EventBus.csproj"
+            "D:\\GitHub\\My.Project.Order\\EventBus\\EventBus.csproj": {
+              "projectPath": "D:\\GitHub\\My.Project.Order\\EventBus\\EventBus.csproj"
             }
           }
         }
@@ -3157,7 +3156,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

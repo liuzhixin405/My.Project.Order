@@ -3259,19 +3259,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Administrator\\.nuget\\packages\\": {}
+    "C:\\Users\\86130\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\GitHub\\My.Project.Order\\Ordering.Infrastructure\\Ordering.Infrastructure.csproj",
+      "projectUniqueName": "G:\\Users\\GitHub\\My.Project.Order\\Ordering.Infrastructure\\Ordering.Infrastructure.csproj",
       "projectName": "Ordering.Infrastructure",
-      "projectPath": "D:\\GitHub\\My.Project.Order\\Ordering.Infrastructure\\Ordering.Infrastructure.csproj",
-      "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "D:\\GitHub\\My.Project.Order\\Ordering.Infrastructure\\obj\\",
+      "projectPath": "G:\\Users\\GitHub\\My.Project.Order\\Ordering.Infrastructure\\Ordering.Infrastructure.csproj",
+      "packagesPath": "C:\\Users\\86130\\.nuget\\packages\\",
+      "outputPath": "G:\\Users\\GitHub\\My.Project.Order\\Ordering.Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\86130\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3279,14 +3279,15 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {},
+        "https://nexus.klickl.com/repository/klickl": {}
       },
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "D:\\GitHub\\My.Project.Order\\Ordering.Domain\\Ordering.Domain.csproj": {
-              "projectPath": "D:\\GitHub\\My.Project.Order\\Ordering.Domain\\Ordering.Domain.csproj"
+            "G:\\Users\\GitHub\\My.Project.Order\\Ordering.Domain\\Ordering.Domain.csproj": {
+              "projectPath": "G:\\Users\\GitHub\\My.Project.Order\\Ordering.Domain\\Ordering.Domain.csproj"
             }
           }
         }
@@ -3338,7 +3339,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
       }
     }
   }

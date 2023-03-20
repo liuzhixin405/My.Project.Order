@@ -103,15 +103,15 @@
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[7.0.0-preview.6.22329.4, )"
+              "version": "[7.0.4, )"
             },
             "Microsoft.EntityFrameworkCore.Relational": {
               "target": "Package",
-              "version": "[7.0.0-preview.6.22329.4, )"
+              "version": "[7.0.4, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[7.0.0-preview.6.22329.4, )"
+              "version": "[7.0.4, )"
             }
           },
           "imports": [

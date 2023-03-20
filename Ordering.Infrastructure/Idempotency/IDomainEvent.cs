@@ -14,7 +14,7 @@ namespace Ordering.Infrastructure.Idempotency
     {
        public int Id { get; set; }
     }
-    public interface IDomainEventHandler<T> where T : IDomainEvent
+    public interface IDomainEventHandler<T> :INotificationHandler<T> where T : IDomainEvent 
     {
         Task Handle(T data,CancellationToken cancellationToken);
     }

@@ -15,7 +15,7 @@ namespace IntegrationEventLogEF
 
         }
 
-        public DbSet<IntegrationEventLogEntry> integrationEventLogs { get; set; }
+        public DbSet<IntegrationEventLogEntry> IntegrationEventLogs { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<IntegrationEventLogEntry>(ConfigureIntegrationEventLogEntry);

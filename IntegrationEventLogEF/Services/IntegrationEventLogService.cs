@@ -55,17 +55,17 @@ namespace IntegrationEventLogEF.Services
 
         private Task UpdateEventStatus(Guid eventId,EventStateEnum status)
         {
-            var eventLogEntry = _integrationEventLogContext.integrationEventLogs.Single(ie => ie.EventId == eventId);
+            var eventLogEntry = _integrationEventLogContext.IntegrationEventLogs.Single(ie => ie.EventId == eventId);
             eventLogEntry.State = status;
             if (status == EventStateEnum.InProgress)
                 eventLogEntry.TimesSent++;
-            _integrationEventLogContext.integrationEventLogs.Update(eventLogEntry);
+            _integrationEventLogContext.IntegrationEventLogs.Update(eventLogEntry);
             return _integrationEventLogContext.SaveChangesAsync();
         }
         public async Task<IEnumerable<IntegrationEventLogEntry>> RetrieveEventLogsPendingToPublishAsync(Guid transactionId)
         {
             var tid = transactionId.ToString();
-            var result = await _integrationEventLogContext.integrationEventLogs.Where(e => e.TransactionId.Equals(tid) && e.State == EventStateEnum.NoPublished).ToListAsync();
+            var result = await _integrationEventLogContext.IntegrationEventLogs.Where(e => e.TransactionId.Equals(tid) && e.State == EventStateEnum.NotPublished).ToListAsync();
             if(result!=null && result.Any())
             {
                 return result.OrderBy(o => o.CreationTime).Select(e => e.DeserializeJsonContent(_eventtypes.Find(t => t.Name == e.EventTypeShortName)));

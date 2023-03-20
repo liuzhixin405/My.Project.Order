@@ -16,7 +16,7 @@ namespace Ordering.API.Infrastructure.IntegrationEventMigrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("Microsoft.eShopOnContainers.BuildingBlocks.IntegrationEventLogEF.IntegrationEventLogEntry", b =>
+            modelBuilder.Entity("IntegrationEventLogEF.IntegrationEventLogEntry", b =>
             {
                 b.Property<Guid>("EventId")
                     .ValueGeneratedOnAdd();
